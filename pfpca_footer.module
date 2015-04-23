@@ -28,22 +28,22 @@ function _pfpca_footer_friends_and_sponsors_content() {
   $output = '<ul class="small-block-grid-2 medium-block-grid-4">
   	<li>
   		<a target="_blank" rel="nofollow" href="http://publicsource.org">
-        <img src="'.$path.'/images/publicsource.jpg" alt="PublicSource" />
+        <img src="/'.$path.'/images/publicsource.jpg" alt="PublicSource" />
       </a>
   	</li>
   	<li>
       <a target="_blank" rel="nofollow" href="http://www.pittsburghisart.org/">
-        <img src="'.$path.'/images/pghisart.jpg" alt="Pittsburgh Is Art" />
+        <img src="/'.$path.'/images/pghisart.jpg" alt="Pittsburgh Is Art" />
       </a>
   	</li>
   	<li>
       <a target="_blank" rel="nofollow" href="http://www.radworkshere.org/">
-        <img src="'.$path.'/images/rad.png" alt="Regional Asset District" />
+        <img src="/'.$path.'/images/rad.png" alt="Regional Asset District" />
       </a>
   	</li>
   	<li>
       <a target="_blank" rel="nofollow" href="http://pair.com">
-        <img src="'.$path.'/images/pair.svg" alt="Pair Networks" />
+        <img src="/'.$path.'/images/pair.svg" alt="Pair Networks" />
       </a>
   	</li>
   </ul>
