@@ -38,7 +38,7 @@ function _pfpca_footer_friends_and_sponsors_content() {
   	</li>
   	<li>
       <a target="_blank" rel="nofollow" href="http://www.radworkshere.org/">
-        <img src="'.$path.'/images/rad.jpg" alt="Regional Asset District" />
+        <img src="'.$path.'/images/rad.png" alt="Regional Asset District" />
       </a>
   	</li>
   	<li>
