@@ -3,7 +3,7 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: -webkit-filter .4s;
-  transition: filter .4s;
+  transition: filter .4s, -webkit-filter .4s;
 }
 
 .block-pfpca-footer-friends-and-sponsors img:hover,
