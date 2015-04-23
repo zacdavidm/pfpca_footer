@@ -1,0 +1,60 @@
+
+
+
+<div class="text-right">
+	<p>sponsored by pair.com</p>
+</div>
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+function pfpca_footer_block_info() {
+  $blocks = array();
+  $blocks['friends_and_sponsors'] = array(
+    'info' => t('Friends and Sponsors'),
+  );
+  return $blocks;
+}
+/**
+* Implements hook_block_view().
+*/
+function pfpca_footer_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'friends_and_sponsors':
+      $block['subject'] = 'Friends and Sponsors';
+      $block['content'] = _pfpca_footer_friends_and_sponsors_content();
+      break;
+  }
+  return $block;
+}
+function _pfpca_footer_friends_and_sponsors_content() {
+	$path=drupal_get_path('module', 'pfpca_footer');
+  $output = '<ul class="small-block-grid-2 medium-block-grid-4">
+  	<li>
+  		<a target="_blank" rel="nofollow" href="http://publicsource.org">
+        <img src="'.$path.'/images/publicsource.jpg" alt="PublicSource" />
+      </a>
+  	</li>
+  	<li>
+      <a target="_blank" rel="nofollow" href="http://www.pittsburghisart.org/">
+        <img src="'.$path.'/images/pghisart.jpg" alt="Pittsburgh Is Art" />
+      </a>
+  	</li>
+  	<li>
+      <a target="_blank" rel="nofollow" href="http://www.radworkshere.org/">
+        <img src="'.$path.'/images/rad.jpg" alt="Regional Asset District" />
+      </a>
+  	</li>
+  	<li>
+      <a target="_blank" rel="nofollow" href="http://pair.com">
+        <img src="'.$path.'/images/pair.svg" alt="Pair Networks" />
+      </a>
+  	</li>
+  </ul>
+	<div class="text-right">
+		<p>sponsored by pair.com</p>
+	</div>';
+  return $output;
+}
