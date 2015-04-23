@@ -47,7 +47,7 @@ function _pfpca_footer_friends_and_sponsors_content() {
       </a>
   	</li>
   </ul>
-	<div class="text-right">
+	<div>
 		<p>sponsored by pair.com</p>
 	</div>';
   return $output;
